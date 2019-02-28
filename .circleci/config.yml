@@ -28,7 +28,7 @@ jobs:
     environment:
       - PROJECT_NAME: "hacknightvol4"
       - GOOGLE_PROJECT_ID: "crack-braid-233111"
-      - GOOGLE_COMPUTE_ZONE: "asia-east1-a"
+      - GOOGLE_COMPUTE_ZONE: "us-central1-a"
       - GOOGLE_CLUSTER_NAME: "hacknightvol4-cluster"
     steps:
       - checkout
