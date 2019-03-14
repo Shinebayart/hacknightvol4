@@ -10,9 +10,8 @@ const buildDate = process.env.APP_BUILD_DATE || new Date().toISOString()
 
 app.get('/', (req, res) => {
     const welcome = myLib.helloWorld()
-    const text = `${welcome}! Сайн уу ! CommitID ${commitRef} Үүсгэгдсэн хугацаа:-> ${buildDate}`
+    const text = `${welcome}! Сайн уу ! CommitID=${commitRef} Үүсгэгдсэн хугацаа:-> ${buildDate}`
     res.send(text)
 })
 
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
-
